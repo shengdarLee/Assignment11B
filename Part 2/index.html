@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vecta Corp. Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/part2.js"></script>
+</head>
+    
+<body>
+    <!-- HOME PAGE -->
+    <div data-role="page" id="home">
+        <div data-role="header">
+            <h1>Directory</h1>
+        </div>
+
+        <div role="main" class="ui-content">
+
+           <h4>Welcome to Directory!</h4>
+            <p>This is a sample app that demonstrates how to build applications with jQuery Mobile.</p>
+            
+            <section data-role="content" id="container"></section>
+        </div>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2015</h4>
+        </div>
+    </div>
+    <!-- END HOME PAGE -->
+    
+    <!-- EMPLOYEE DETAILS PAGE -->
+    <div data-role="page" id="employeeDetails">
+
+          <header data-role="header"  data-position="fixed"  >                    
+            <h4>Employee Details</h4>
+ 
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-btn-inline ui-mini   ui-btn-icon-left ui-icon-back" data-role="button" data-theme="a">Back</a>
+    <a href="#home" class="ui-btn ui-corner-all ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-search">Search</a>
+		</header>
+              
+       <div role="main" class="ui-content">
+            <ul data-role="listview" id="employeeHeadShot">
+            </ul>
+
+           <div class="clear" style="height:10px;"></div>
+           
+            <ul data-role="listview" id="employeeData">
+            </ul>
+
+            <div data-role="footer" data-position="fixed">
+                <h4>Copyright &copy; 2015</h4>
+            </div>
+        </div>
+    </div>
+	    <!-- END EMPLOYEE DETAILS PAGE -->
+	
+	   <!-- SUBORDINATE EMPLOYEE PAGE -->
+    <div data-role="page" id="subordinateList">
+       
+        <header data-role="header"  data-position="fixed"  >                     
+            <h4>Direct Reports</h4>
+ 
+    <a href="#employeeDetails" class="ui-btn ui-corner-all ui-btn-inline ui-mini   ui-btn-icon-left ui-icon-back" data-role="button" data-theme="a">Back</a>
+    <a href="#home" class="ui-btn ui-corner-all ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-search">Search</a>
+		</header>
+			
+       <div role="main" class="ui-content">            
+		   <ul data-role="listview" id="subordinateListView"></ul>
+
+        <div data-role="footer" data-position="fixed">
+            <h4>Copyright &copy; 2015</h4>
+        </div>
+    </div>
+    <!-- END SUBORDINATE EMPLOYEE PAGE -->
+	</div>
+	
+</body>
+</html>
+
+
+
